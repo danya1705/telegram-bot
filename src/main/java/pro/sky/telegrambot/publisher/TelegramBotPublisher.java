@@ -41,7 +41,7 @@ public class TelegramBotPublisher {
     private void printNotification(NotificationTask task) {
         String text = task.getText();
         long chatId = task.getChatId();
-        SendMessage message = new SendMessage(chatId, "<b>" + text + "</b>\nУдачи!");
+        SendMessage message = new SendMessage(chatId, "<b>" + text + "</b>");
         message.parseMode(ParseMode.HTML);
         SendResponse response = telegramBot.execute(message);
     }

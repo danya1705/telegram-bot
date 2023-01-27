@@ -49,7 +49,7 @@ public class TelegramBotUpdatesListener implements UpdatesListener {
                     printSuccessMessage(chatId, task.get());
                 } else {
                     printMessage(chatId, "Неправильный формат. Сообщение должно быть вида:" +
-                            "\n<i>01.01.2022 20:00 Текст напоминания</i>");
+                            "\n<i>01.01.2023 20:00 Текст напоминания</i>");
                 }
             }
         });
